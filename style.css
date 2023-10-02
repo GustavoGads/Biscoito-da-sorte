@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+main {
+    border-radius: .5rem;
+    background: #FFF;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+    width: min(42.8rem, 90%);
+
+    margin-bottom: 20rem;
+    padding: 4.8rem 6.4rem;
+
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 1.4rem;
+    
+    color: #34355B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+}
+
+main p {
+    margin-bottom: 2.6rem;
+
+    color: #34355B;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.screen01 img{
+    width: min(24.8rem, 90%);
+
+    cursor: pointer;
+}
+
+.screen01 img:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+/*  SCREEN 2  */
+
+
+.screen02 .sorte {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 6rem;
+
+    animation-name: appear;
+    animation-duration: 1.5s;
+}
+
+.screen02 p {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: max(2.4rem);
+    font-weight: 400;
+
+    margin: 0;
+}
+
+.screen02 img {
+    margin-bottom: 6rem;
+}
+
+button {
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background: #FF9500;
+
+    padding: 1.6rem;
+    gap: 1rem;
+
+    transition: background 700ms;
+}
+
+button:hover {
+    background-color: #cf7a04;
+    cursor: pointer;
+}
