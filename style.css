@@ -128,6 +128,7 @@ main p {
 
 .screen02 img {
     margin-bottom: 6rem;
+    width: min(24.8rem, 90%);
 }
 
 button {
