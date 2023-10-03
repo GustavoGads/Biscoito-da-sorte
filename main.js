@@ -15,9 +15,18 @@ const massageData = [
 /* Eventos */
 imgClick.addEventListener('click', handleClick)
 btnReset.addEventListener('click', handleClickReset)
+document.addEventListener('keydown', pressEnter)
 
 
 /* Funções */
+
+function pressEnter(e) {
+    if (e.key == 'Enter'&& screen01.classList.contains('hide')) {
+        handleClickReset()
+    } else {
+        handleClick()
+    }
+}
 
 function toggleScreen() {
     screen01.classList.toggle('hide')
